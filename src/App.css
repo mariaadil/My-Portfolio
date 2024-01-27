@@ -1,0 +1,251 @@
+*{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogQQ5pkzRAikTQE5Zb_KZ4z23aGdcUnoCUQ&usqp=CAU");
+  background-size: cover;
+  color: black;
+}
+
+/*For Animation*/
+/* App.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward translation effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+/* App.css */
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease-out;
+}
+
+/* App.css */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-in-out;
+}
+
+
+/* Navbars*/
+
+.whole-nav-bar{
+  display:flow-root;
+  align-items: center;
+}
+
+.navb{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: xx-large;
+  color:blueviolet;
+  font-weight: bold;
+  font-style: italic;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navs{
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.navs:hover{
+ color: brown;
+}
+
+
+/*About*/
+
+.about{
+ text-align: center;
+ font-weight: bolder;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.abouts{
+  font-style: italic;
+  font-family:serif;
+  color:brown;
+  text-align: center;
+  font-weight: bold;
+}
+
+.p-about{
+  padding: 0px 10px 0px 10px;
+  margin: 10px 30px 10px 320px;
+  border-color: 2px solid lightcoral;
+}
+
+.icons{
+  padding: 0px 10px 0px 10px;
+  margin: 30px 50px 10px 300px;
+}
+
+.a-icons{
+  padding: 20px;
+  margin: 30px;
+}
+
+.about-image{
+  border-radius: 80%;
+  height: 250px;
+  width: 20%;
+  float: inline-start;
+  margin: 40px 10px 10px 2px;
+  border: 5px solid black;
+}
+
+
+/* Projects */
+
+.projects {
+  padding: 10px;
+  margin: 10px;
+}
+
+.project-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Add spacing between pictures */
+}
+
+.proj-heading {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.proj-image {
+  width: 30%;
+  height: 150px;
+  margin-right: 170px; /* Adjust this margin as needed */
+  margin-left: 20px;
+  border-radius: 24px;
+}
+
+.proj-image:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  filter: brightness(80%); /* Adjust the brightness as needed */
+}
+
+.proj-details {
+  flex: 5;
+}
+
+.proj-name {
+  color: crimson;
+  margin:3px
+}
+
+.proj-link {
+  text-decoration: none;
+  margin-top: 50px; /* Adjust this margin as needed */
+  margin-right: 50px; /* Adjust this margin to be the same as proj-image */
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: color 0.3s;
+}
+
+.proj-link:hover {
+  color: blue;
+}
+
+
+
+/* Contact */
+
+.nav-contact-heading{
+  text-align: center;
+  margin: 10px;
+}
+
+.nav-email{
+  font-weight: bold;
+  margin: 10px;
+}
+
+.nav-p{
+  margin: 10px;
+}
+
+/*Skills*/
+
+.skill{
+  text-align: center;
+}
+
+/*Website Resposiveness*/
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .about-image {
+    width: 100%; /* Make the image responsive */
+    margin: 20px 0; /* Add spacing around the image */
+  }
+
+  .project-container {
+    flex-direction: column; /* Stack projects in a column for smaller screens */
+    align-items: center; /* Center projects in a column */
+  }
+
+  .proj-image {
+    width: 100%; /* Make project images responsive */
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-bottom: 20px; /* Add spacing between projects */
+  }
+}
+
+/* Media query for even smaller screens, like mobile phones */
+@media (max-width: 576px) {
+  /* Adjust styles for even smaller screens here */
+
+  .navb {
+    font-size: 1.5em; /* Decrease the font size of the navbar brand for smaller screens */
+  }
+
+  .navs {
+    font-size: 1em; /* Decrease the font size of the navbar links for smaller screens */
+  }
+
+  /* Add more adjustments as needed for a better mobile experience */
+}
