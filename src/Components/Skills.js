@@ -3,9 +3,7 @@ import React from 'react'
 export default function Skills() {
   return (
     <section id='skills'>
-        <div>
-        <br/>
-        <hr/>
+        <div className='skilling'>
       <h1 className='skill'>Skills</h1>
     <ol>
       <ul><strong>Web Development</strong>

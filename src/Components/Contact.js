@@ -11,14 +11,12 @@ const ContactInfo = () => {
 
   return (
     <section id='contact'>
-    <div>
-      <br/>
-      <hr/>
+    <div className='cont'>
       <h1 className='nav-contact-heading'>Contact Me</h1>
       <div>
         <p className='nav-email'>Email: {email}</p>
         <p className='nav-email'>Phone: {phone}</p>
-      </div>
+      
       <div>
         <p className='nav-p'>
           If you prefer, you can also contact me via{' '}
@@ -41,6 +39,7 @@ const ContactInfo = () => {
         <a className='a-icons' href="https://github.com/mariaadil" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
+      </div>
       </div>
     </section>
   );
