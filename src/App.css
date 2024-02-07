@@ -297,3 +297,30 @@ footer {
     font-size: 0.9em;
   }
 }
+
+/* Add the following media query to hide the Navbar.Collapse by default */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+/* Add a media query to show the Navbar.Collapse when the navbar is toggled (hamburger menu is active) */
+@media (max-width: 991.98px) {
+  .navbar-toggler[aria-expanded="true"] + .navbar-collapse {
+    display: block;
+  }
+}
+
+/* Additional styles for the navbar toggle button */
+.navbar-toggler-icon {
+  background-color: #fff; /* Change the background color as needed */
+}
+
+.navbar-toggler {
+  border: none; /* Remove the border to make it look like a button */
+}
