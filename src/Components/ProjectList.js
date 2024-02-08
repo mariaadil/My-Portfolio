@@ -15,6 +15,12 @@ const projects = [
     descripton: 'This is React App. ',
     project: 'https://github.com/mariaadil/Semester-Web-Technology-Project-',
   },
+  {
+    image: 'https://repository-images.githubusercontent.com/579023026/be6e29e0-9519-4f51-b4bb-899081b4d74a',
+    name: 'Youtube_Clone',
+    descripton: 'This is React App. ',
+    project: 'https://github.com/mariaadil/Youtube_Clone',
+  },
 ];
 
 const ProjectList = () => (
